@@ -1,6 +1,16 @@
 lang: java
+jdk:
+- oraclejdk8
+before_script:
+- ".travis/setup_git.sh"
 script:
-- make
+- ".travis/build.sh"
+cache:
+  directories:
+  - "$HOME/.gradle"
 env:
   global:
     secure: VByk5KV8TFtxlYDbbtv5EVGG1+q5he8JJ3MHoZhLYfummV4pLDy4WW5/KJgmF5hSjS9mM9mKoEKf15dq//xYnF9+CtaL5oXN/rFY7oqukmZUvvWK8G7SOmRt/w7A/I0h/qp1XAFgBvTu01yn07UJ4UmgLHhIyCRyG28a4UjiXw0fpvtNwYVkkzvCPTntts0a3YUA2ZHVaGuBFrPX0Xalh5z4ldNEwdyKIWgfaE7O3vku1pJo8pyA1g4Ypsh5/v3XmiFb1hODH7iQN3Yp4ui3OO/DEPRMWgFKuE+nXjydPNTKMsc/qp9LFbD/Sey3F9Pk15jRKCdN7R5czXiKBvPtadqzptRZQJFog6PMeFT3w9VX4CiWNB8h/WW/0fllNGZn7YNVunNASum9883QLlk6/b1BVSP3ieFV+6xKGGormRrFDt9vENGCTb2arbkSRvECXyF/UjGaOmRNtIRSl8Hd32yuef9IwZyohgWE59bKOmt/VLTBkOsdrUTSewr+an7NYiRdbY5u0krA415r6eDFW6Cl+joy6y7Nqfj0TCdQ+3jSuYLCiGP/5Uln6kWGnQJ5Axm+uyr/dEHYoVrCSfyYqGMd1q68SnwIS2DXqaC1fgyR23sg+mAL16tGhSSP9h7t3iqTFc9Wy0L1jBt2+h3hgmZ7BeUgP+f2pJLS8u9qtMY=
+
+after_success:
+- push.sh
