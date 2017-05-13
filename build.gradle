@@ -1,0 +1,45 @@
+group 'com.hannesdorfmann'
+version '1.0-SNAPSHOT'
+
+buildscript {
+    ext.kotlin_version = '1.1.2-3'
+
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+apply plugin: 'kotlin'
+
+repositories {
+    mavenCentral()
+}
+
+sourceSets {
+        main.kotlin.srcDirs += 'episodes'
+}
+
+
+dependencies {
+    compileOnly gradleApi()
+
+
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jre8:$kotlin_version"
+    compile "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
+    compile "org.reflections:reflections:0.9.11"
+    compile 'com.squareup.okhttp3:okhttp:3.7.0'
+    compile "com.atlassian.commonmark:commonmark:0.9.0"
+    compile "io.reactivex.rxjava2:rxjava:2.1.0"
+    compile "org.eclipse.jgit:org.eclipse.jgit:3.5.0.201409260305-r"
+}
+
+
+
+// ./graldew build podcast to generate podcast related stuff like rss feed etc.
+task podcast(dependsOn: 'classes', type: JavaExec) {
+    main = 'com.hannesdorfmann.gitpodcaster.MainKt'
+    classpath = sourceSets.main.runtimeClasspath
+}
