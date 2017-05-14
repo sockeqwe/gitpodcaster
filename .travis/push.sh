@@ -17,7 +17,7 @@ else
   git checkout $TRAVIS_BRANCH
   git status
   git add .
-  git commit -am $COMMIT_MSG
+  git commit -am "$COMMIT_MSG"
   git push origin $TRAVIS_BRANCH
   git status
 fi
