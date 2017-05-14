@@ -7,7 +7,9 @@ if [ "$TRAVIS_REPO_SLUG" != "$SLUG" ]; then
 elif [ "$TRAVIS_BRANCH" == "$BRANCH" ]; then
   echo "Skipping snapshot deployment: was not a pull request."
 else
+  git status
   git add .
   git commit -am "Genreated podcast stuff"
   git push
+  git status
 fi
