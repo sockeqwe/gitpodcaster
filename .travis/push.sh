@@ -12,6 +12,7 @@ elif [ "$TRAVIS_BRANCH" = "$BRANCH" ]; then
 elif [ "$TRAVIS_COMMIT_MESSAGE" = "$COMMIT_MSG" ]; then
   echo "Skipping podcast generation: push was caused by auto generated push"
 else
+  echo "Current branch is $TRAVIS_BRANCH"
   git status
   git checkout $TRAVIS_BRANCH
   git status
