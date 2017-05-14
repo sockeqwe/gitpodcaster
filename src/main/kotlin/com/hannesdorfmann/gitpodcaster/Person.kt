@@ -7,7 +7,8 @@ import java.net.URL
  */
 data class Person(
         val name: String,
+        val email: String ? = null,
         val twitter: String? = null,
-        val website: URL? = null,
+        val website: String? = null,
         val github : String? = null
 )
