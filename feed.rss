@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+<channel>
+	<title>The Context #androiddev</title>
+	<link>https://github.com/artem-zinnatullin/TheContext-Podcast</link>
+	<description>New Podcast about Android Development</description>
+	<language>en-us</language>
+	<itunes:owner>
+		<itunes:email>artem.zinnatullin@gmail.com</itunes:email>
+		<itunes:name>Artem Zinnatullin</itunes:name>
+	</itunes:owner>
+	<atom:author>
+		<atom:name>Artem Zinnatulin</atom:name>
+		<atom:uri>http://artemzin.com</atom:uri>
+		<atom:email>artem.zinnatullin@gmail.com</atom:email>
+	</atom:author>
+	<atom:author>
+		<atom:name>Hannes Dorfmann</atom:name>
+		<atom:uri>http://hannesdorfmann.com</atom:uri>
+	</atom:author>
+	<itunes:author>Artem Zinnatulin</itunes:author>
+	<itunes:explicit>no</itunes:explicit>
+	<itunes:keywords>android,androiddev,context,development,software</itunes:keywords>
+	<itunes:subtitle>New Android Developers Podcast</itunes:subtitle>
+	<itunes:category text="Technology">
+		<itunes:category text="Software How-To"/>
+	</itunes:category>
+	<itunes:image href="https://raw.githubusercontent.com/artem-zinnatullin/TheContext-Podcast/master/logo.png"/>
+	<item>
+		<title>Hello</title>
+	</item>
+</channel>
+</rss>
