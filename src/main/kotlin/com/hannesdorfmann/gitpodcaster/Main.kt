@@ -20,4 +20,6 @@ fun main(args: Array<String>) {
         println(it.newInstance())
     }
 
+    println("Travis branch" + System.getenv("TRAVIS_BRANCH"))
+
 }
