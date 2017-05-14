@@ -1,10 +1,3 @@
-import com.hannesdorfmann.gitpodcaster.Episode;
-import java.time.LocalDateTime
-
-class Episode1 : Episode(
-        title = "Episode 1",
-        releaseDate = LocalDateTime.of(2017, 5, 14, 13, 0),
-        showNotes = """
 # Episode 10: Kotlin Language Design Nitpicking with Dmitry Jemerov from JetBrains
 
 We know about sound volume level issue [#67](https://github.com/artem-zinnatullin/TheContext-Podcast/issues/67) and tried our best to maximize it in this episode, but Artem used his crappy headphones mic instead of professional one and we couldn't achieve what we wanted, sorry about that, we'll try our best in next episode.
@@ -41,7 +34,3 @@ Dmitry Jemerov [@intelliyole](https://twitter.com/intelliyole), [personal blog](
 
  - [Book: Kotlin in Action written by Dmitry Jemerov and Svetlana Isakova](https://www.manning.com/books/kotlin-in-action)
  - [Official Kotlin website with photo of lighthouse on Kotlin island](http://kotlinlang.org/)
-
-""".trimIndent()
-
-)
