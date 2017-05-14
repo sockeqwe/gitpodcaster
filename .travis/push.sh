@@ -12,6 +12,7 @@ elif [ "$TRAVIS_BRANCH" = "$BRANCH" ]; then
 elif [ "$TRAVIS_COMMIT_MESSAGE" = "$COMMIT_MSG" ]; then
   echo "Skipping podcast generation: push was caused by auto generated push"
 else
+  cat /home/travis/build/sockeqwe/gitpodcaster/feed.rss
   git status
   git checkout $TRAVIS_BRANCH
   git add .
