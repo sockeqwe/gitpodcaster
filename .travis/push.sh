@@ -10,6 +10,7 @@ elif [ "$TRAVIS_BRANCH" = "$BRANCH" ]; then
   echo "Skipping podcast generation: directly push to master branch"
 else
   git status
+  git checkout $TRAVIS_BRANCH
   git add .
   git commit -am "Genreated podcast stuff"
   git push origin $TRAVIS_BRANCH
