@@ -44,7 +44,7 @@ fun writeRssFeed(unsafeSink: BufferedSink, now: LocalDateTime, hosts: List<Perso
                 .writeUtf8("\t<link>${Podcast.link}</link>\n")
                 .writeUtf8("\t<description>${Podcast.description}</description>\n")
                 .writeUtf8("\t<language>${Podcast.language}</language>\n")
-              //  .writeUtf8("\t<lastBuildDate>${now.format(estFormatter)}</lastBuildDate>\n")
+                .writeUtf8("\t<lastBuildDate>${now}</lastBuildDate>\n")
                 .writeUtf8("\t<itunes:owner>\n")
                 .writeUtf8("\t\t<itunes:email>artem.zinnatullin@gmail.com</itunes:email>\n")
                 .writeUtf8("\t\t<itunes:name>Artem Zinnatullin</itunes:name>\n")
