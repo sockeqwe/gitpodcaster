@@ -3,6 +3,8 @@ SLUG="sockeqwe/gitpodcaster"
 BRANCH="master"
 COMMIT_MSG="Auto Genreated podcast stuff"
 
+git status
+
 if [ "$TRAVIS_REPO_SLUG" != "$SLUG" ]; then
   echo "Skipping podcast generation. Expected '$SLUG' but was '$TRAVIS_REPO_SLUG'."
 #elif [ "$TRAVIS_PULL_REQUEST" != "true" ]; then
@@ -12,7 +14,6 @@ elif [ "$TRAVIS_BRANCH" = "$BRANCH" ]; then
 elif [ "$TRAVIS_COMMIT_MESSAGE" = "$COMMIT_MSG" ]; then
   echo "Skipping podcast generation: push was caused by auto generated push"
 else
-  git status
   git checkout $TRAVIS_BRANCH
   git status
   git add .
