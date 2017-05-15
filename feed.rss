@@ -5,7 +5,7 @@
 	<link>https://github.com/artem-zinnatullin/TheContext-Podcast</link>
 	<description>New Podcast about Android Development</description>
 	<language>en-us</language>
-	<lastBuildDate>2017-05-15T04:48:24.261</lastBuildDate>
+	<lastBuildDate>2017-05-15T05:02:47.913</lastBuildDate>
 	<itunes:owner>
 		<itunes:email>artem.zinnatullin@gmail.com</itunes:email>
 		<itunes:name>Artem Zinnatullin</itunes:name>
@@ -70,6 +70,20 @@
 <li><a href="https://github.com/JakeWharton/u2020">U2020</a></li>
 <li><a href="http://jakewharton.com/android-needs-a-simulator/">Android Needs A Simulator, Not An Emulator</a></li>
 <li><a href="http://artemzin.com/blog/minsdk-without-flavors/">minSdkVersion for multiDex without flavors</a></li>
+</ul>
+			]]>
+	</item>
+	<item>
+		<title>Episode 6: RxApps</title>
+		<<pubDate>2016-12-31T20:00</<pubDate>
+		<itunes:summary>
+			<![CDATA[
+<h1>Episode 6: RxApps</h1>
+<p>This example finally shows that travis is pushing back the generated stuff to the branch (like rss feed etc.).</p>
+<p>Sample list</p>
+<ul>
+<li>Item 1</li>
+<li>Item 2</li>
 </ul>
 			]]>
 	</item>
